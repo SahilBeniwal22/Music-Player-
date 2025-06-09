@@ -56,6 +56,6 @@ def daily_5pm_job():
     send_whatsapp_message()
 
 scheduler = BlockingScheduler()
-scheduler.add_job(daily_5pm_job, 'cron', hour=22, minute=40)
+scheduler.add_job(daily_5pm_job, 'cron', hour=23, minute=10)
 print("📅 Scheduler started. Waiting for 5:00 PM...")
 scheduler.start()
